@@ -1,0 +1,70 @@
+.cajaForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "MANOLO1 MANOLO2" "MANOLO1 MANOLO2" "MANOLO1 MANOLO2";
+    padding-left: 15%;
+  }
+  
+  .MANOLO1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "ITEM1" "ITEM2" "ITEM3";
+    grid-area: MANOLO1;
+  }
+  
+  .ITEM1 { grid-area: ITEM1; }
+  
+  .ITEM2 { grid-area: ITEM2; padding-top: 2%; padding-bottom: 5%}
+  
+  .ITEM3 { grid-area: ITEM3; }
+  
+  .MANOLO2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: MANOLO2;
+  }
+  
+  .ITEM1-1 { grid-area: 1 / 1 / 2 / 4; }
+  
+  .ITEM1-2 { grid-area: 2 / 1 / 3 / 2; }
+  
+  .ITEM1-3 { grid-area: 3 / 1 / 4 / 2; }
+
+  @media screen and (max-width: 950px) {
+    .cajaForm {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: "MANOLO1 MANOLO2" "MANOLO1 MANOLO2" "MANOLO1 MANOLO2";
+        padding-left: 15%;
+      }
+      
+      .MANOLO1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "ITEM1" "ITEM2" "ITEM3";
+        grid-area: MANOLO1;
+      }
+      
+      .ITEM1 { grid-area: ITEM1; }
+      
+      .ITEM2 { grid-area: ITEM2; padding-top: 2%; padding-bottom: 5%}
+      
+      .ITEM3 { grid-area: ITEM3; }
+      
+      .MANOLO2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-area: MANOLO2;
+      }
+      
+      .ITEM1-1 { grid-area: 1 / 1 / 2 / 4; }
+      
+      .ITEM1-2 { grid-area: 2 / 1 / 3 / 2; }
+      
+      .ITEM1-3 { grid-area: 3 / 1 / 4 / 2; } }
